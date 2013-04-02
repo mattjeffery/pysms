@@ -21,3 +21,12 @@
 #  MA 02110-1301, USA.
 
 import pyz80
+
+class SMSEmulator(object):
+
+    def __init__(self):
+        """
+            Setup the emualator context
+        """
+
+        self.z80 = pyz80.Z80Context()
